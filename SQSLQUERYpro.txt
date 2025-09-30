@@ -36,3 +36,8 @@ insert into products values
 ('RYL01', 'FNG01', 'King doll', 9.49, '12 inch king doll with royal garments and crown'),
 ('RYL02', 'FNG01', 'Queen doll', 9.49, '12 inch queen doll with royal garments and crown');
 
+
+Queries
+1) select p.prod_id, p.prod_name, v.vend_name from products as p inner join vendors as v on p.vend_id = v.vend_id;
+
+
