@@ -1,0 +1,20 @@
+
+CREATE TABLE vendors (
+vend id char(10) NOT NULL,
+vend name char(50) NOT NULL,
+vend address char(50),
+vend city char(50),
+vend state char(5),
+vend zip char(10),
+vend country char(50),
+  PRIMARY KEY (vend id)),
+
+
+CREATE TABLE products (
+prod id char(10) NOT NULL,
+vend id char(10),
+prod name char(255) NOT NULL,
+prod price decimal(8,2) NOT NULL,
+prod desc text,
+PRIMARY KEY (prod id),
+FOREIGN KEY (vend id) REFERENCES vendors (vend id));
