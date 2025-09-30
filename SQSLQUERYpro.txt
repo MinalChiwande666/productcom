@@ -38,6 +38,7 @@ insert into products values
 
 
 Queries
-1) select p.prod_id, p.prod_name, v.vend_name from products as p inner join vendors as v on p.vend_id = v.vend_id;
+1) select p.prod_id, p.prod_name, v.vend_name from products as p inner join vendors as v on p.vend_id = v.vend_id ORDER BY p.prod_id ASC;
+
 
 
